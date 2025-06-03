@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with dkms
+
+override_dh_clean:
+	rm -rf usr
+	dh_clean
+
+override_dh_prep: usr/src/ipx-1.0.0/README
+	dh_prep
+
+usr/src/ipx-1.0.0/README:
+	git clone https://github.com/pasis/ipx.git usr/src/ipx-1.0.0
+	rm -rf usr/src/ipx-1.0.0/.git*

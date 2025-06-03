@@ -1,0 +1,13 @@
+Source: ipx-dkms
+Section: admin
+Priority: optional
+Maintainer: Jason Powell <apt@hatestheinternet.com>
+Build-Depends: debhelper (>= 10), dh-dkms
+Standards-Version: 3.9.6
+
+Package: ipx-dkms
+Provides: ipx-dkms
+Architecture: all
+Depends: ${misc:Depends}, dkms
+Description: IPX kernel module
+ Uses DKMS to restore the IPX kernel module, based on pasis' repository
