@@ -8,5 +8,5 @@ Eventually, the easiest path to this will be:
 ```
 sudo curl https://apt.hatestheinternet.com/apt.hatestheinternet.com.gpg -o /etc/apt/trusted.gpg.d/apt.hatestheinternet.com.gpg
 echo 'deb [arch=amd64] http://apt.hatestheinternet.com retro main' | sudo tee /etc/apt/sources.list.d/hti-retro.list
-sudo apt install ipx-dkms
+sudo apt update && sudo apt install ipx-dkms
 ```
