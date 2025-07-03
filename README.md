@@ -16,3 +16,8 @@ sudo apt update && sudo apt install ipx-dkms
 If your (virtual) machine is using secure boot and this is your first DKMS module you may have to approve a key. Basically, if this happens:
 
 ![The first DKMS module built on a secure boot system asking for a password](https://raw.githubusercontent.com/hatestheinternet/ipx-dkms/4ef978332d32fa07e6a8b6cae7b2d6168eda1408/image/secboot.png)
+
+Just remember the crap password you set because, when you reboot that machine, you need to wander down the "Enroll MOK" path and it will eventually ask for it:
+
+![The first step adding a new MOK when an EFI Proxmox virtual machine with secure boot enabled ... umm, reboots](https://github.com/hatestheinternet/ipx-dkms/blob/trunk/image/efimok.png?raw=true)
+
