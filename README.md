@@ -22,3 +22,5 @@ Just remember the crap password you set because, when you reboot that machine, y
 ![The first step adding a new MOK when an EFI Proxmox virtual machine with secure boot enabled ... umm, reboots](https://github.com/hatestheinternet/ipx-dkms/blob/trunk/image/efimok.png?raw=true)
 
 **NOTE** If this is indeed your first time, you will not be able to load the module until you've rebooted and enrolled the key.
+
+**DOUBLE NOTE** Don't disable secure boot, do it properly.
