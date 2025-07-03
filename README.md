@@ -10,3 +10,9 @@ sudo curl https://apt.hatestheinternet.com/apt.hatestheinternet.com.gpg -o /etc/
 echo 'deb [arch=amd64] http://apt.hatestheinternet.com retro main' | sudo tee /etc/apt/sources.list.d/hti-retro.list
 sudo apt update && sudo apt install ipx-dkms
 ```
+
+## Secure Boot
+
+If your (virtual) machine is using secure boot and this is your first DKMS module you may have to approve a key. Basically, if this happens:
+
+![The first DKMS module built on a secure boot system asking for a password](https://raw.githubusercontent.com/hatestheinternet/ipx-dkms/4ef978332d32fa07e6a8b6cae7b2d6168eda1408/image/secboot.png)
